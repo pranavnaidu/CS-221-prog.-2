@@ -143,6 +143,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="QueType.cpp" />
+    <ClCompile Include="testdriver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QueType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
