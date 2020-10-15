@@ -7,7 +7,7 @@
 QueType::QueType(int max) {
 
 	maxQue = max + 1;
-	front = maxQue - 1;
+	front = maxQue - 1;  
 	rear = maxQue - 1;
 	expenses = new ExpenseType[maxQue];
 }
