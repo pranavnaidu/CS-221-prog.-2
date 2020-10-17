@@ -21,10 +21,24 @@
     <ClCompile Include="QueType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="CountedQueType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QueType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CountedQueType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="output.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>

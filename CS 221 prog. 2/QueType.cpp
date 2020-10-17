@@ -22,7 +22,7 @@ QueType::QueType() { // default class constructor
 	expenses = new ExpenseType[maxQue];
 }
 
-QueType::~QueType() { // class destructor
+QueType::~QueType() {
 
 	delete[] expenses;
 }
@@ -75,37 +75,3 @@ void QueType::Dequeue(ExpenseType& expense) {
 	}
 }
 
-//************************************************************************************************************
-//CountedQueType class implementation
-
-void CountedQueType::Enqueue(ExpenseType newExpense) {
-
-	try {
-		QueType::Enqueue(newExpense);
-		length++;
-	}
-	catch (FullQueue) {
-		throw FullQueue();
-	}
-}
-
-void CountedQueType::Dequeue(ExpenseType& expense) {
-
-	try {
-		QueType::Dequeue(expense);
-		length--;
-	}
-	catch (EmptyQueue) {
-		throw EmptyQueue();
-	}
-}
-
-int CountedQueType::GetLength() const {
-
-	return length;
-}
-
-CountedQueType::CountedQueType(int max) : QueType(max) {
-
-	length = 0;
-}

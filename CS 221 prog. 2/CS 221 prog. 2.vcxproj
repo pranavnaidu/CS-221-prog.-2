@@ -144,10 +144,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="QueType.cpp" />
+    <ClCompile Include="CountedQueType.cpp" />
     <ClCompile Include="testdriver.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CountedQueType.h" />
     <ClInclude Include="QueType.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt" />
+    <Text Include="output.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,24 @@
+IsEmpty
+GetLength
+Enqueue food 300.50
+Enqueue gas 60.35
+Enqueue book 89.99
+Enqueue computer 699.00
+GetLength
+GetTotalExpense
+Dequeue
+Dequeue
+GetLength 
+GetTotalExpense
+Enqueue rent 850.0
+Enqueue internet 29.99
+Enqueue utility 178.30
+GetLength
+Enqueue game 50.00
+IsFull
+GetLength
+GetTotalExpense
+MakeEmpty
+IsEmpty
+GetLength
+Quit

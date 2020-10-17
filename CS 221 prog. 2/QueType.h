@@ -18,6 +18,8 @@ public:
 		double amount;
 	};
 
+	ExpenseType new_item;
+
 	QueType(int max);
 	QueType();
 	~QueType();
@@ -33,19 +35,4 @@ private:
 	int rear;
 	ExpenseType* expenses;
 	int maxQue = 6;
-};
-
-class CountedQueType : public QueType {
-
-public:
-	
-	CountedQueType(int max);
-	void Enqueue(ExpenseType newExpense);
-	void Dequeue(ExpenseType& expense);
-	int GetLength() const;
-	double GetTotalExpenses();
-
-private:
-
-	int length;
 };

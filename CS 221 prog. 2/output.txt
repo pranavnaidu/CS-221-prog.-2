@@ -1,0 +1,23 @@
+The list is empty.
+Number of items in the list: 0
+1 items in the list.
+2 items in the list.
+3 items in the list.
+4 items in the list.
+Number of items in the list: 4
+The total expense cost is: 0
+3 items in the list.
+2 items in the list.
+Number of items in the list: 2
+The total expense cost is: 0
+3 items in the list.
+4 items in the list.
+5 items in the list.
+Number of items in the list: 5
+The list is full.
+Number of items in the list: 5
+The total expense cost is: 0
+The list is now empty.
+The list is empty.
+Number of items in the list: 5
+Quit
