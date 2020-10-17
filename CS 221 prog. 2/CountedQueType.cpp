@@ -38,11 +38,23 @@ CountedQueType::CountedQueType(int max) : QueType(max) {
 
 double CountedQueType::GetTotalExpenses() {
 
+	double total_sum = 0;
+	double temp_amount = 0;
+	int temp_queue_elements = CountedQueType::GetLength();
 
-	return 0.0;
+	for (int i = 0; i < temp_queue_elements; i++) {
+		Dequeue(new_item);
+		temp_amount = new_item.amount;
+		total_sum = total_sum + temp_amount;
+		Enqueue(new_item);
+	} 
+
+	return total_sum;
 }
 
-string CountedQueType::ToString()
-{
-	return string();
+void CountedQueType::MakeEmpty() {
+
+	QueType::MakeEmpty();
+	length = 0;
+
 }

@@ -12,7 +12,7 @@ public:
 	void Dequeue(ExpenseType& expense);
 	int GetLength() const;
 	double GetTotalExpenses();
-	string ToString();
+	void MakeEmpty();
 
 private:
 

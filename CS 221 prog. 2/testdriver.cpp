@@ -13,6 +13,7 @@ using namespace std;
 
 // create objects for each class
 CountedQueType countedQueue(5);
+QueType queue;
 ExpenseType expense_item;
 
 int main() {
@@ -98,10 +99,11 @@ int main() {
 			}
 
 			else if (command == "GetTotalExpense") {
-	
-				countedQueue.GetTotalExpenses();
-				cout << "Get Total Expenses command executed. The total expenses are: " << countedQueue.GetTotalExpenses() << endl << endl;
-				outFile << "The total expense cost is: " << countedQueue.GetTotalExpenses() << endl;
+
+				var_amount = 0;
+				var_amount = countedQueue.GetTotalExpenses();
+				cout << "Get Total Expenses command executed. The total expenses are: " << var_amount << endl << endl;
+				outFile << "The total expense cost is: " << var_amount << endl;
 			}
 
 			else if (command == "Enqueue") { //puts the item into the queue
@@ -121,8 +123,7 @@ int main() {
 
 				countedQueue.Dequeue(countedQueue.new_item);
 
-				cout << "Delete Item command executed." << endl << endl;
-				cout << "There are now " << countedQueue.GetLength() << " items in the list." << endl << endl;
+				cout << "Delete Item command executed. There are now " << countedQueue.GetLength() << " items in the list." << endl << endl;
 				outFile << countedQueue.GetLength() << " items in the list." << endl;
 			}
 
@@ -132,11 +133,11 @@ int main() {
 
 				if (countedQueue.isFull()) {
 					cout << "The list is full. " << endl << endl;
-					outFile << "The list is full." << endl;
+					outFile << "The list is full. " << endl;
 				}
 
 				else {
-					cout << "The list is not full." << endl << endl;
+					cout << "The list is not full. " << endl << endl;
 					outFile << "The list is not full. " << endl;
 				}
 			}
